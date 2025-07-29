@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Access - Login & Registration</title>
+    <!-- Tailwind CSS CDN - for development only. In a real React app, Tailwind is usually integrated differently. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Basic styles for the root div where React app mounts */
+        #root {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Add basic keyframe for animations used in the React app */
+        @keyframes fadeInScaleUp {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInScaleUp 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- 
+        This is where your compiled React JavaScript bundle would be loaded.
+        For example: <script src="/static/js/main.chunk.js"></script>
+        When you 'build' your React app, these files are automatically generated.
+    -->
+    <script>
+        // In a real React app, your React code (App.js, AuthForm.js, etc.)
+        // gets compiled into a single (or a few) JavaScript files.
+        // This 'index.html' then loads those compiled JavaScript files.
+        //
+        // Since I cannot provide the *compiled* JavaScript here,
+        // this HTML file alone will not run the React application.
+        // It's a placeholder to show you what the host HTML looks like.
+        //
+        // To run the React app, you typically use a development server or build it.
+        //
+        // For demonstration purposes within this environment, the React code
+        // is designed to run directly when placed in a React immersive block.
+    </script>
+</body>
+</html>
